@@ -7,12 +7,45 @@ body {
     padding: 0;
 }
 
+/* Header Section */
 header {
-    background: linear-gradient(90deg, #1f1f1f, #3a3a3a);
-    color: #fff;
+    background: url('path-to-stars-pattern.png') center center / cover, linear-gradient(90deg, #1f1f1f, #3a3a3a);
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
+
+.logo-container {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5252;
+}
+
 
 .hero {
     margin: 20px 0;
